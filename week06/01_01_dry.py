@@ -18,4 +18,18 @@ for i in numbers:
 
 print(new_div_2)
 
+# Answer
+
+def even_nos(numbers):
+    div_two = []
+    for new_list in numbers:
+        if new_list % 2 == 0:
+            div_two.append(i)
+    return div_two
+
+nos1 = [2, 1, 3, 5, 1, 2, 3, 12, 3, 45, 1, 2, 3]
+nos2 = [213, 2, 3, 125, 12, 32, 21, 3, 6, 23, 12, 3, 326, 45, 12, 32, 14, 2]
+
+print(even_nos(nos1))
+print(even_nos(nos2))
 
