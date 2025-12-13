@@ -24,7 +24,7 @@ def even_nos(numbers):
     div_two = []
     for new_list in numbers:
         if new_list % 2 == 0:
-            div_two.append(i)
+            div_two.append(new_list)
     return div_two
 
 nos1 = [2, 1, 3, 5, 1, 2, 3, 12, 3, 45, 1, 2, 3]
