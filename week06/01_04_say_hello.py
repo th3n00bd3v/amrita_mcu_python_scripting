@@ -5,6 +5,7 @@
 # should output something funny like : "hey gilad, your pants are on fire!!!!"
 
 
-def say_hello():
-    pass  # delete this and finish the function
+def say_hello(name):
+    print(f"hey {name}, your pants are on fire!!!!")
 
+say_hello('iyer')
