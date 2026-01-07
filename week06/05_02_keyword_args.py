@@ -14,6 +14,11 @@ def rectangle(length,width=10):
     """
     return f"The area of the rectangle is {length*width} m2"
 
-area1=rectangle(5)
-print(area1)
 
+# Calling the function with the default width
+area1 = rectangle(5)
+print(area1)  # Output: The area of the rectangle is 50 m²
+
+# Calling the function with a custom width
+area2 = rectangle(5, 4)
+print(area2)  # Output: The area of the rectangle is 20 m²
