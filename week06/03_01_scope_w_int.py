@@ -56,4 +56,6 @@ print(x)
 '''
 Here, a new x is created within the function and set to 200. This local variable shadows the global x within the function scope. 
 The output will be: 210 for z and 100 for x.
+
+Conclusion: For x defined locally, its values will differ. Otherwise it will remain the same if declared globally.
 '''
