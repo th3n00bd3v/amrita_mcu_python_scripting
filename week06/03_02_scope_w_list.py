@@ -3,6 +3,7 @@
 # list_of_vowels = ["a", "e", "i", "o", "u"]
 
 
+
 def check_for_vowels(string_to_count):
     """
     Function will count if all vowels occur within the string
@@ -32,3 +33,21 @@ print(check_for_vowels("The"))  # this should be False!
 # why is it empty?
 
 ## Fix the function so this does not happen!
+
+## Fixed code
+
+def check_for_vowels(string_to_count):
+    list_of_vowels = ["a", "e", "i", "o", "u"]
+    
+    for char in string_to_count:
+        if char.lower() in list_of_vowels:
+            list_of_vowels.remove(char.lower())
+
+    if len(list_of_vowels) == 0:
+        return True
+    else:
+        return False
+
+print(check_for_vowels("sEquoia"))
+print(check_for_vowels("The"))
+
