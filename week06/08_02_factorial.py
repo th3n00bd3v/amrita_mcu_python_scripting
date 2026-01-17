@@ -10,13 +10,16 @@ def factorial(n):
     reminder: factorial 8! is
     8*7*6*5*4*3*2*1
     """
-    if n<=1: # This is a base case
-        return 1
     
-    return factorial(n-1)*n
+    if not isinstance(n, int) or n < 0:
+        raise ValueError("n must be a non-negative integer")
+    if n <= 1:
+        return 1
+    return n * factorial(n - 1)
+
     
 for number in range (0,10):
-    print(f"Factorial of {number} is {factorial(number)}")
+    print(f"{number}! = {factorial(number)}")
 
 
     
