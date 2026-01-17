@@ -27,9 +27,9 @@ import random
 class Chicken:
     """This is a class that makes chickens"""
     
-    times=["morning","afternoon","night"]
+    times=["Morning","Afternoon","Night"]
     
-    time_of_day=random.choice(times)# Chooses randomly which time of the day it is
+    time_of_day=random.choice(times) # Chooses randomly which time of the day it is
     number_of_eggs_laid=0
     
     def __init__(self,breed,gender,weight:float,lays_eggs:bool):
@@ -39,7 +39,7 @@ class Chicken:
         self.lays_eggs=lays_eggs
         
     def lay_egg(self):
-        if self.lays_eggs==True and Chicken.time_of_day=="night":
+        if self.lays_eggs==True and Chicken.time_of_day=="Night":
             print(f"Egg layed")
             Chicken.number_of_eggs_laid+=1
         else:
@@ -47,7 +47,7 @@ class Chicken:
             
 a1=Chicken(breed="farmer",gender="female",weight="2.5",lays_eggs=True)
 a1.lay_egg()
-print(Chicken.number_of_eggs_laid,Chicken.time_of_day)
+print(f"Eggs layed: {Chicken.number_of_eggs_laid},Time: {Chicken.time_of_day}")
 
         
         
