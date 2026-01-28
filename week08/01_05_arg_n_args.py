@@ -14,3 +14,10 @@ Remember, your string needs to _grow_ with the *args - it needs infinite potenti
 
 """
 
+
+def introduce(name, job, *args):
+    posssesions = ', '.join(args)
+    return f"Hello, {name}. I heard your job of {job} allows you to own a {posssesions}"
+
+print(introduce("Gilad", "washing dishes", "lawn-mower", "house", "cat", "bat"))
+print(introduce("Alice", "programming", "laptop", "smartphone","headphones"))

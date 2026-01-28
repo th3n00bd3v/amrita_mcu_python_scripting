@@ -6,21 +6,49 @@ Practice using the different levels of severity on your dog code below. be creat
 
 """
 
+import sys
+import logging
 
 class Dog:
     def __init__(self, limbs=None, eyes=None, color=None, kindness=None):
         self.limbs = limbs
         self.eyes = eyes
         self.color = color
-        self.kindness = kindness  # nice, mean, angry, sad, lonely
+        self.kindness = kindness
 
-        ## write some logging code in here
-        ## if limbs < 4 -- log a warning! dog needs help (it's missing legs!)
-        ## if kindness is sad or lonely, log a warning. If it's mean or angry it's critical! we must be careful
+        # Log based on properties
+        logging.debug(f"Created Dog: limbs={limbs}, eyes={eyes}, color={color}, kindness={kindness}")
 
+        if limbs is not None and limbs < 4:
+            logging.warning(f"Dog has {limbs} limbs — this is fewer than 4! Might need help!")
+
+        if kindness in ("sad", "lonely"):
+            logging.warning(f"Dog appears {kindness} — might need extra care!")
+
+        if kindness in ("mean", "angry"):
+            logging.critical(f"Dog is {kindness} — be cautious!")
+
+        # General info
+        logging.info(f"Dog summary: {color} dog with {eyes} eyes.")
 
 if __name__ == "__main__":
-    a = Dog(
-        limbs=3, eyes=1, color="red", kindness="nice"
-    )  # create different dogs and see your logger in action!
+    # Default level
+    log_level = logging.WARNING
 
+    if len(sys.argv) > 1:
+        arg_level = sys.argv[1].upper()
+        if arg_level in ("DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"):
+            log_level = getattr(logging, arg_level)
+
+    # Configure logger
+    logging.basicConfig(
+        level=log_level,
+        format="%(levelname)s: %(message)s"
+    )
+
+    # Create some test dogs
+    Dog(limbs=3, eyes=1, color="red", kindness="nice")
+    Dog(limbs=4, eyes=2, color="brown", kindness="sad")
+    Dog(limbs=4, eyes=2, color="black", kindness="angry")
+    Dog(limbs=2, eyes=2, color="white", kindness="mean")
+    Dog(limbs=4, eyes=2, color="golden", kindness="happy")

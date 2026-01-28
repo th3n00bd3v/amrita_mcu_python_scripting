@@ -12,3 +12,28 @@ Iterate over the args summing them up.
 Use an if statement ot check if the user passed tuples.
 Raise an exception if they passed something else
 """
+
+
+def inner_multiplication(*args):
+    result = []
+
+    for item in args:
+        if not isinstance(item, tuple):
+            raise TypeError(f"Expected tuple, got {type(item).__name__}")
+
+        if len(item) != 2:
+            raise ValueError("Each tuple must contain exactly two elements")
+
+        a, b = item
+        result.append(a * b)
+
+    return result
+
+
+a = inner_multiplication((1, 2), (2, 2), (3, 2), (4, 5))
+print("a =", a)
+
+# this will raise an exception
+b = inner_multiplication((1, 2), (2, 2), (3, 2), (4, 5), [5, 3.0], {4, 2})
+print(b)
+

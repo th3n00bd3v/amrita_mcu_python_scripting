@@ -38,3 +38,33 @@ while True:
     else:  # no break!!! only executes if for loop finishes
         break
 
+""" Corrected code below """
+
+def deep_flatten(newlist):
+    flat = []
+    for item in newlist:
+        if isinstance(item, (list, tuple)):
+            flat.extend(deep_flatten(item))
+        else:
+            flat.append(item)
+    return flat
+
+
+hard_nested_list = [
+    [1, 2, [1, [1, 2], 2], 3, 4],
+    [5, 6],
+    [7, 8, 9],
+    "shiva",
+    10,
+    [1, 2, [8, 9], "Devi"],
+    10.0,
+    (1, 2),
+]
+
+many_nests = ["a", ["bb", ["ccc", "ddd"], "ee", "ff"], "g", "h"]
+
+flat_hard = deep_flatten(hard_nested_list)
+flat_many = deep_flatten(many_nests)
+
+print(flat_hard)
+print(flat_many)

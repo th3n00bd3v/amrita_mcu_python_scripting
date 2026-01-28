@@ -6,18 +6,17 @@ Fix the error by "padding" the word with blank spaces (or - dashes) when the exc
 """
 
 word = "abcde"
-    
+
 for i in range(12):
     try:
-        # print(i+1,word[i],"\n")
-        print(i+1,word[i:i+1])
- 
+        print(i + 1, word[i])
 
-    except Exception as e:
-        print(e)
-        print(i+1,"-")
-        
-    else: # If there is no exceptions, this block executes
+    except IndexError:
+        print(i + 1, "-")
+
+    else:  # runs only if no exception
         print(f"As per now, you have {i} letters")
+
     finally:
-        print(f"Your final word is '{i},{word[0:i+1]}'")
+        padded_word = word.ljust(i + 1, "-")
+        print(f"Your final word is '{i},{padded_word}'")

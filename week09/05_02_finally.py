@@ -10,3 +10,18 @@ if an error happens.
 The purpose of this exercise is to just practice observing that
 """
 
+# Answer coded below
+
+def force_error():
+    print("About to divide by zero...")
+    return 10 / 0  # ZeroDivisionError
+
+try:
+    force_error()
+except KeyError:
+    # Not catching the actual error!
+    print("This will never run.")
+finally:
+    print("FINALLY block executed: cleaning up resources.")
+
+print("This line will never be reached.")

@@ -6,7 +6,9 @@
 
 def inner_multiplication(*inputs):
     result=[]
-    for i,j in inputs:
+    
+    for pair in inputs:
+        i,j = pair
         result.append(i*j)
     return(result)
     
