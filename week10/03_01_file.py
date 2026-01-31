@@ -13,7 +13,60 @@ The second way is fine for quick scripts though
 2. Print out all the entire file
 3. Print in the last line of the file
 4. Add a new sentence to the file "I AM A NEW SENTENCE!"
-5. 
 
 """
+from pathlib import Path
 
+# Method 1
+
+basedir = Path(__file__).parent
+filepath = basedir / "winnie_pooh.txt"
+
+with filepath.open("r", encoding="utf-8") as f:
+    first_line = f.readline()
+    print("First line:")
+    print(first_line)
+print()
+
+with filepath.open("r", encoding="utf-8") as f:
+    print("Entire file:")
+    print(f.read())
+
+print()
+
+with filepath.open("r", encoding="utf-8") as f:
+    lines = f.readlines()
+    print("Last line:")
+    print(lines[-1])
+
+print()
+
+with filepath.open("a", encoding="utf-8") as f:
+    f.write("\nI AM A NEW SENTENCE!")
+
+
+# Method 2
+
+filename = "week10/winnie_pooh.txt"
+
+with open(filename, "r", encoding="utf-8") as f:
+    first_line = f.readline()
+    print("First line:")
+    print(first_line)
+    
+print()
+
+with open(filename, "r", encoding="utf-8") as f:
+    print("Entire file:")
+    print(f.read())
+
+print()
+
+with open(filename, "r", encoding="utf-8") as f:
+    lines = f.readlines()
+    print("Last line:")
+    print(lines[-1])
+
+print()
+with open(filename, "a", encoding="utf-8") as f:
+    f.write("\nI AM A NEW SENTENCE! Again!")

@@ -24,17 +24,21 @@ class Car:
         return self.num_tires == 4
 
 
+
 ## pickle the actual class Car 
 
-with open('car_class.pkl', 'wb') as file:
-    pickle.dump(Car, file)
+
+if __name__ == "__main__":
+    with open('car_class.pkl', 'wb') as file:
+        pickle.dump(Car, file)
     
-with open('car_class.pkl', 'rb') as file:
-    CarLoaded = pickle.load(file)
+    with open('car_class.pkl', 'rb') as file:
+        CarLoaded = pickle.load(file)
     
 
-my_car = CarLoaded(4, "blue", True)
-print(my_car.can_drive())
+    my_car = CarLoaded(4, "blue", True)
+    print(my_car.can_drive())
+    
 
 
 # my_car = Car(4, 'blue', True)

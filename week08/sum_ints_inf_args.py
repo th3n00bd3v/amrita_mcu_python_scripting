@@ -20,5 +20,6 @@ def sum_ints(*numbers):
             result += value
     return result
 
-print(sum_ints(1,2,3,4,'hi','hi',(1,2,3), 10))
-print(sum_ints(2,2,2,200.2))
+if __name__ == "__main__":
+    print(sum_ints(1,2,3,4,'hi','hi',(1,2,3), -10))
+    print(sum_ints(2,2,2,200.2))

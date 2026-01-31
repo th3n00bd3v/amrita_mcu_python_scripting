@@ -8,3 +8,34 @@
 
 
 """
+from pathlib import Path
+import os
+
+source_file = Path("winnie_pooh.txt")
+output_dir = Path("winnie_pooh_split")
+
+output_dir.mkdir(exist_ok=True)
+
+file_lines = 100
+
+with source_file.open("r") as f:
+    file_count = 1
+
+    while True:
+        lines = []
+
+        for _ in range(file_lines):
+            line = f.readline()
+            if not line:
+                break
+            lines.append(line)
+
+        if not lines:
+            break
+
+        output_file = output_dir / f"winnie_pooh_part_{file_count}.txt"
+        with output_file.open("w") as out_f:
+            out_f.writelines(lines)
+
+        print(f"Wrote {len(lines)} lines to {output_file}")
+        file_count += 1
