@@ -1,0 +1,453 @@
+Name: Bulbasaur
+Height: 7
+
+Name: Ivysaur
+Height: 10
+
+Name: Venusaur
+Height: 20
+
+Name: Charmander
+Height: 6
+
+Name: Charmeleon
+Height: 11
+
+Name: Charizard
+Height: 17
+
+Name: Squirtle
+Height: 5
+
+Name: Wartortle
+Height: 10
+
+Name: Blastoise
+Height: 16
+
+Name: Caterpie
+Height: 3
+
+Name: Metapod
+Height: 7
+
+Name: Butterfree
+Height: 11
+
+Name: Weedle
+Height: 3
+
+Name: Kakuna
+Height: 6
+
+Name: Beedrill
+Height: 10
+
+Name: Pidgey
+Height: 3
+
+Name: Pidgeotto
+Height: 11
+
+Name: Pidgeot
+Height: 15
+
+Name: Rattata
+Height: 3
+
+Name: Raticate
+Height: 7
+
+Name: Spearow
+Height: 3
+
+Name: Fearow
+Height: 12
+
+Name: Ekans
+Height: 20
+
+Name: Arbok
+Height: 35
+
+Name: Pikachu
+Height: 4
+
+Name: Raichu
+Height: 8
+
+Name: Sandshrew
+Height: 6
+
+Name: Sandslash
+Height: 10
+
+Name: Nidoran-F
+Height: 4
+
+Name: Nidorina
+Height: 8
+
+Name: Nidoqueen
+Height: 13
+
+Name: Nidoran-M
+Height: 5
+
+Name: Nidorino
+Height: 9
+
+Name: Nidoking
+Height: 14
+
+Name: Clefairy
+Height: 6
+
+Name: Clefable
+Height: 13
+
+Name: Vulpix
+Height: 6
+
+Name: Ninetales
+Height: 11
+
+Name: Jigglypuff
+Height: 5
+
+Name: Wigglytuff
+Height: 10
+
+Name: Zubat
+Height: 8
+
+Name: Golbat
+Height: 16
+
+Name: Oddish
+Height: 5
+
+Name: Gloom
+Height: 8
+
+Name: Vileplume
+Height: 12
+
+Name: Paras
+Height: 3
+
+Name: Parasect
+Height: 10
+
+Name: Venonat
+Height: 10
+
+Name: Venomoth
+Height: 15
+
+Name: Diglett
+Height: 2
+
+Name: Dugtrio
+Height: 7
+
+Name: Meowth
+Height: 4
+
+Name: Persian
+Height: 10
+
+Name: Psyduck
+Height: 8
+
+Name: Golduck
+Height: 17
+
+Name: Mankey
+Height: 5
+
+Name: Primeape
+Height: 10
+
+Name: Growlithe
+Height: 7
+
+Name: Arcanine
+Height: 19
+
+Name: Poliwag
+Height: 6
+
+Name: Poliwhirl
+Height: 10
+
+Name: Poliwrath
+Height: 13
+
+Name: Abra
+Height: 9
+
+Name: Kadabra
+Height: 13
+
+Name: Alakazam
+Height: 15
+
+Name: Machop
+Height: 8
+
+Name: Machoke
+Height: 15
+
+Name: Machamp
+Height: 16
+
+Name: Bellsprout
+Height: 7
+
+Name: Weepinbell
+Height: 10
+
+Name: Victreebel
+Height: 17
+
+Name: Tentacool
+Height: 9
+
+Name: Tentacruel
+Height: 16
+
+Name: Geodude
+Height: 4
+
+Name: Graveler
+Height: 10
+
+Name: Golem
+Height: 14
+
+Name: Ponyta
+Height: 10
+
+Name: Rapidash
+Height: 17
+
+Name: Slowpoke
+Height: 12
+
+Name: Slowbro
+Height: 16
+
+Name: Magnemite
+Height: 3
+
+Name: Magneton
+Height: 10
+
+Name: Farfetchd
+Height: 8
+
+Name: Doduo
+Height: 14
+
+Name: Dodrio
+Height: 18
+
+Name: Seel
+Height: 11
+
+Name: Dewgong
+Height: 17
+
+Name: Grimer
+Height: 9
+
+Name: Muk
+Height: 12
+
+Name: Shellder
+Height: 3
+
+Name: Cloyster
+Height: 15
+
+Name: Gastly
+Height: 13
+
+Name: Haunter
+Height: 16
+
+Name: Gengar
+Height: 15
+
+Name: Onix
+Height: 88
+
+Name: Drowzee
+Height: 10
+
+Name: Hypno
+Height: 16
+
+Name: Krabby
+Height: 4
+
+Name: Kingler
+Height: 13
+
+Name: Voltorb
+Height: 5
+
+Name: Electrode
+Height: 12
+
+Name: Exeggcute
+Height: 4
+
+Name: Exeggutor
+Height: 20
+
+Name: Cubone
+Height: 4
+
+Name: Marowak
+Height: 10
+
+Name: Hitmonlee
+Height: 15
+
+Name: Hitmonchan
+Height: 14
+
+Name: Lickitung
+Height: 12
+
+Name: Koffing
+Height: 6
+
+Name: Weezing
+Height: 12
+
+Name: Rhyhorn
+Height: 10
+
+Name: Rhydon
+Height: 19
+
+Name: Chansey
+Height: 11
+
+Name: Tangela
+Height: 10
+
+Name: Kangaskhan
+Height: 22
+
+Name: Horsea
+Height: 4
+
+Name: Seadra
+Height: 12
+
+Name: Goldeen
+Height: 6
+
+Name: Seaking
+Height: 13
+
+Name: Staryu
+Height: 8
+
+Name: Starmie
+Height: 11
+
+Name: Mr-Mime
+Height: 13
+
+Name: Scyther
+Height: 15
+
+Name: Jynx
+Height: 14
+
+Name: Electabuzz
+Height: 11
+
+Name: Magmar
+Height: 13
+
+Name: Pinsir
+Height: 15
+
+Name: Tauros
+Height: 14
+
+Name: Magikarp
+Height: 9
+
+Name: Gyarados
+Height: 65
+
+Name: Lapras
+Height: 25
+
+Name: Ditto
+Height: 3
+
+Name: Eevee
+Height: 3
+
+Name: Vaporeon
+Height: 10
+
+Name: Jolteon
+Height: 8
+
+Name: Flareon
+Height: 9
+
+Name: Porygon
+Height: 8
+
+Name: Omanyte
+Height: 4
+
+Name: Omastar
+Height: 10
+
+Name: Kabuto
+Height: 5
+
+Name: Kabutops
+Height: 13
+
+Name: Aerodactyl
+Height: 18
+
+Name: Snorlax
+Height: 21
+
+Name: Articuno
+Height: 17
+
+Name: Zapdos
+Height: 16
+
+Name: Moltres
+Height: 20
+
+Name: Dratini
+Height: 18
+
+Name: Dragonair
+Height: 40
+
+Name: Dragonite
+Height: 22
+
+Name: Mewtwo
+Height: 20
+
+Name: Mew
+Height: 4
+
