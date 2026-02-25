@@ -10,7 +10,7 @@ driver = webdriver.Chrome()
 try:
     driver.get("https://www.google.com")
     search_box = driver.find_element(By.NAME, "q")
-    search_box.send_keys("Selenium WebDriver")
+    ksearch_box.send_keys("Selenium WebDriver")
     search_box.send_keys(Keys.RETURN)
 
 finally:
