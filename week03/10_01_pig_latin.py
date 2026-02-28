@@ -22,3 +22,21 @@ The greedy Monkey followed the Fox to the trap. As soon as he saw the meat he gr
 Shortly after that, another election among the Animals was held.
 """
 
+translated_story = ""
+current_word = ""
+
+for char in story:
+    if char.isalpha():
+        current_word += char
+    else:
+        if current_word:
+            pig_word = current_word[1:] + current_word[0] + "ay"
+            translated_story += pig_word
+            current_word = ""
+        translated_story += char
+
+if current_word:
+    pig_word = current_word[1:] + current_word[0] + "ay"
+    translated_story += pig_word
+
+print(translated_story)

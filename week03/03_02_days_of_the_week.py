@@ -2,7 +2,31 @@
 
 #Write a python program in which read an integer number less than 7 from user
 
+number = int(input("Enter a number: "))
+
 #If the input number is greater than  or equal to 7, then print error message
+
+if number < 0:
+    print("Enter a number greater than or equal to 0.")
+elif number == 0:
+    print("Sunday")
+elif number == 1:
+    print("Monday")
+elif number == 2:
+    print("Tuesday")
+elif number == 3:
+    print("Wednesday")
+elif number == 4:
+    print("Thursday")
+elif number == 5:
+    print("Friday")
+elif number == 6:
+    print("Saturday")
+elif type(number) != int:
+    print("Invalid input.")
+else :
+    print("Number must be less than seven.")
+    
 
 #If the input is 0 print "Sunday"
 #If the input is 1 print "Monday"

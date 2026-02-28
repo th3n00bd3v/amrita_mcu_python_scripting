@@ -12,5 +12,22 @@
 
 import random
 
-random_number = random.randint(0, 10)
+rand_nos = random.randint(0, 10)
 
+name = input("Please enter your name: ")
+
+print(f"Hello {name}!")
+
+vowel_list = "aeiouAEIOU"
+
+if name[0] in vowel_list:
+    print("Your name begins with a vowel!")
+else:
+    print("Your name begins with a consonant!")
+
+number = int(input("Please pick a number between 1 and 10: "))
+
+if number == rand_nos:
+    print("Congratulations! You won!")
+else:
+    print(f"Sorry, you lost. The number was {rand_nos}.")

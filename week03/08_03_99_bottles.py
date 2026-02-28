@@ -8,3 +8,11 @@
 
 # you must use a while loop to do it
 
+while True:
+    jars = 100
+    while jars > 0:
+        print(f"There are {jars} jars of payasam on the counter... now I ate one!")
+        jars -= 1
+    print("There are 0 jars of payasam on the counter - none left to eat!")
+    print("Now I will go vomit....")
+    break
