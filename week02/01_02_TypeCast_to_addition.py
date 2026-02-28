@@ -5,12 +5,15 @@
 a = 10
 b = "10"
 
+print(a + int(b))
+    
 # After explicit conversion, use python to successfully perform
 # the addition of these variables - print the result to the console
 
 
 ## Now try to convert this variable
 c = "ten"
+int(c)
 
 ## What kind of error does python give?
 ## What do you think the reason is?

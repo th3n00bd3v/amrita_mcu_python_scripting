@@ -3,9 +3,13 @@
 ay = "a"
 bee = "b"
 
+print (ord(ay))
+print(ord(bee))
+
 # which one is bigger?
 
 print(ay > bee)
+
 
 # why??
 

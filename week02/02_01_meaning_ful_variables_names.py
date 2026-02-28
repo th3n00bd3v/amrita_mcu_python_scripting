@@ -8,3 +8,9 @@ c = "Vidyapeetham"
 
 # rename the above variables
 # Choose appropriate names for variable and print the concatenated result
+
+a = "Amritaa"
+b = "AHEAD"
+c = "Online"
+
+print(a + " " + b + " " + c)

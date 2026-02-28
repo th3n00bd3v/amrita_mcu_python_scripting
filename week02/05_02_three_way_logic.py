@@ -10,6 +10,14 @@ c = True
 # Does the order of operations matter?
 # is print(a or b and c) different?
 
+print(a and b or c)
+print(a or b and c)
+
+
+print((a and b) or c)
+print(a and (b or c))
+
+
 # Assign c to false and print the value of a and b or c
 a = True
 b = False
@@ -18,4 +26,9 @@ c = False
 # Understand the difference in each scenario
 # what is happening here?
 
+print(a and b or c)
+
 # now try to use some ()'s to force python to evaluate it differently.
+
+print((a and b) or c)
+print(a and (b or c))
