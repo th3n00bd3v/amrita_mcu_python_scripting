@@ -6,3 +6,5 @@
 # but try to do it using a list comprehension.
 
 word = "Amrita Vishwavidyapeetham"
+
+print([letter for letter in word])

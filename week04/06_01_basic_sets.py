@@ -4,3 +4,9 @@
 
 s = {1, 2, 3, 4}
 t = {3, 4, 5, 6}
+
+intersection = s.intersection(t)
+union = s.union(t)
+
+print(f"Intersection values: {intersection}")
+print(f"Union values: {union}")

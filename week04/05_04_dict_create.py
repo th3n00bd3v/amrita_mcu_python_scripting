@@ -3,3 +3,9 @@
 # result = {1: 1, 2: 4, 3: 9, ... and so on}
 
 # use a for-loop
+
+result = {}
+for n in range(1, 11):
+    result[n] = n * n
+    
+print(result)

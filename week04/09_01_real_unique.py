@@ -6,3 +6,11 @@
 
 # NOTE - you make only keep purely unique values from the original list
 # i.e. if it appeared more than once in the first list, you have to remove it entirely.
+
+list = [1, 2, 6, 55, 2, 'hi', 4, 6, 1, 13]
+unique_list = []
+for x in list:
+    if list.count(x) == 1:
+        unique_list.append(x)
+
+print(f"Unique values: {unique_list}")

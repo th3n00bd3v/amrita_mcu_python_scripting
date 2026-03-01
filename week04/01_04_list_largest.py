@@ -6,3 +6,12 @@
 # output = 123123
 
 # use a for loop
+
+
+largest_number = None
+numbers = [1, 2, 1, 3, 123123, 2, 1, 3, 6, 3, 1, 23, 6, 123, 1235]
+for number in numbers:
+    if largest_number is None or number > largest_number:
+        largest_number = number
+        
+print(f"The largest number in the list is: {largest_number}")

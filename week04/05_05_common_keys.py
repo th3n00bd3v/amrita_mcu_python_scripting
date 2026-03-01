@@ -10,3 +10,14 @@
 dict_1 = {"a": 1, "b": 2, "c": 3}
 dict_2 = {"a": 2, "c": 4, "d": 2}
 
+summed_dict = {}
+for key in dict_1:
+    if key in dict_2:
+        summed_dict[key] = dict_1[key] + dict_2[key]
+    else:
+        summed_dict[key] = dict_1[key]
+for key in dict_2:
+    if key not in dict_1:
+        summed_dict[key] = dict_2[key]
+        
+print(summed_dict)

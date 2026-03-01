@@ -1,4 +1,25 @@
-# Make your list flatten code do a DEEP flatten and account for other datatypes
+# # Make your list flatten code do a DEEP flatten and account for other datatypes
+
+# hard_nested_list = [
+#     [1, 2, [1, [1, 2], 2], 3, 4],
+#     [5, 6],
+#     [7, 8, 9],
+#     "shiva",
+#     10,
+#     [1, 2, [8, 9,], "Devi"],
+#     10.0,
+#     (1, 2),
+# ]
+
+# # should get back
+# # [1, 2, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 'brandon', 10, 10.0, 1, 2]
+
+# many_nests = ["a", ["bb", ["ccc", "ddd"], "ee", "ff"], "g", "h"]
+# # should get back
+# # ['a', 'bb', 'ccc', 'ddd', 'ee', 'ff', 'g', 'h']
+
+
+# Updated code
 
 hard_nested_list = [
     [1, 2, [1, [1, 2], 2], 3, 4],
@@ -6,15 +27,21 @@ hard_nested_list = [
     [7, 8, 9],
     "shiva",
     10,
-    [1, 2, [8, 9,], "Devi"],
+    [1, 2, [8, 9], "Devi"],
     10.0,
     (1, 2),
 ]
 
-# should get back
-# [1, 2, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 'brandon', 10, 10.0, 1, 2]
+# Start with a stack containing all items
+stack = hard_nested_list[::-1]  # reverse to process left to right
+flattened = []
 
-many_nests = ["a", ["bb", ["ccc", "ddd"], "ee", "ff"], "g", "h"]
-# should get back
-# ['a', 'bb', 'ccc', 'ddd', 'ee', 'ff', 'g', 'h']
+while stack:
+    item = stack.pop()
+    if isinstance(item, (list, tuple)):
+        # Add contents to stack in reverse order
+        stack.extend(item[::-1])
+    else:
+        flattened.append(item)
 
+print(flattened)

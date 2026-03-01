@@ -24,3 +24,13 @@ print(result)
 
 # Sample List : ['abc', 'xyz', 'aba', '1221']
 # Expected Result : 2
+
+target = ['abc', 'xyz', 'aba', '1221']
+
+result = 0
+
+for x in target:
+    if len(x) >= 2 and x[0] == x[-1]:
+        result += 1
+
+print(result)

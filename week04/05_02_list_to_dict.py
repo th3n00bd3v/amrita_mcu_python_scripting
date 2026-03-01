@@ -10,3 +10,15 @@
 #                   {'color_name': 'Yellow', 'color_code': '#FFFF00'}]
 
 # use a for-loop
+
+color_names = ["Black", "Red", "Maroon", "Yellow"]
+color_codes = ["#000000", "#FF0000", "#800000", "#FFFF00"]
+
+result_list = []
+for i in range(len(color_names)):
+    result_list.append({
+        "color_name": color_names[i],
+        "color_code": color_codes[i]
+    })
+
+print(result_list)

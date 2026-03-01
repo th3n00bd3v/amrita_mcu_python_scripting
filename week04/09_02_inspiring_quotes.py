@@ -36,4 +36,24 @@ famous_quotes = [
         "full_name": "Alan Bennett",
         "quote": "Standards are always out of date.  That’s what makes them standards.",
     },
+    {
+        "full_name": "Martin Luther King Jr.",
+        "quote": "The computer can't tell you the emotional story. It can give you the exact number of how many times a heart has been broken, but it can't tell you what that feels like.",
+    }
 ]
+
+inspiring_quotes = []
+
+for quote_info in famous_quotes:
+    full_name = quote_info["full_name"]
+    quote = quote_info["quote"]
+
+    name_parts = full_name.split()
+    first_name = name_parts[0]
+    last_name = " ".join(name_parts[1:])
+
+    formatted_quote = f'"{quote}" - {last_name}, {first_name}'
+    inspiring_quotes.append(formatted_quote)
+
+for quote in inspiring_quotes:
+    print(quote)
